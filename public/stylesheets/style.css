@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#content {
+    padding-bottom: 70px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+
+    /*------------------*/
+    background: #d9d9d9;
+    text-align: center;
+    line-height: 50px;
+}
+
+#img-1 {
+    background: url(http://img03.deviantart.net/5734/i/2014/049/6/2/trafalgar_law_pirate_symbol_vector_by_spister-d773l18.png) no-repeat center center;
+    background-size: contain;
+}
+
+#img-2 {
+    background: url(//vignette2.wikia.nocookie.net/deathnote/images/6/6c/L_Symbol.jpeg/revision/latest?cb=20081006192949) no-repeat center center;
+    background-size: contain;
+}
+
+#img-3 {
+    background: url(http://orig13.deviantart.net/7347/f/2014/281/b/e/steins_gate_by_ihsanfr-d8212vb.png) no-repeat center center;
+    background-size: contain;
+}
+
+#img-4 {
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+}

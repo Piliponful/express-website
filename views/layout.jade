@@ -1,0 +1,33 @@
+doctype html
+html
+    head
+        title= title
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        link(rel='stylesheet', href='bower_components/normalize-css/normalize.css')
+        link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.min.css')
+        link(rel='stylesheet', href='stylesheets/style.css')
+    body
+        #wrapper
+            #content
+                nav.navbar.navbar-default
+                    .container
+                        .navbar-header
+                            button(type='button', data-toggle='collapse', data-target='#navbar-collapse').navbar-toggle.collapsed
+                                span.sr-only Toggle navigation
+                                span.icon-bar
+                                span.icon-bar
+                                span.icon-bar
+                            a(href='/').navbar-brand Express site
+                        .collapse.navbar-collapse#navbar-collapse
+                            ul.nav.navbar-nav.navbar-right
+                                li(class=(title === 'Home' ? 'active' : '')): a(href='/') Home
+                                li(class=(title === 'About Us' ? 'active' : '')): a(href='/about') About Us
+                                li(class=(title === 'Services' ? 'active' : '')): a(href='/services') Services
+                                li(class=(title === 'Contact' ? 'active' : '')): a(href='/contact') Contact
+                block content
+            footer &copy; 2015, All right reserved
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')

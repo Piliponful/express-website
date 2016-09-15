@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    .container
+        .jumbotron#img-2
+            h1 Contact Form
+            if name
+                h2 Who you trying to reach: #{name}
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sunt suscipit nemo, cum harum, quam laboriosam tenetur ipsam sit culpa inventore dolorem et. Repellat, laudantium animi aperiam eveniet temporibus. Cumque.
+            input(type='button' role='button' value='Contact route').btn.btn-danger
+    .container
+        .row
+            .col-sm-12
+                form
+                    .form-group
+                        label(for='name') Name
+                        input(type='text', id='name', name='name', placeholder='Enter your name').form-control
+                    .form-group
+                        label(for='pass') Password
+                        input(type='password' id='pass' name='password' placeholder='Enter your password').form-control
+                    input(type='submit').btn.btn-default
